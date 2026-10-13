@@ -1,0 +1,26 @@
+https://localhost:5500/em/login
+
+U: system
+P:Kg44559900
+container: null
+
+databse name: xe
+port: 1521
+
+
+admin user: system
+admin pass: Kg44559900
+
+@@@
+
+service:
+
+net start oracleserviceXE
+------------------------------------
+sqlplus
+
+sqlplus "kg"/Kg44559900@localhost
+------------------------------------
+
+listener:
+lsnrctl status
