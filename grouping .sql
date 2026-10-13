@@ -11,5 +11,8 @@ where employee_number= 123
 group by grouping sets ((tbl_employee.department, employee_number, tbl_attendance.attendance_month),(tbl_employee.department, employee_number),(department),())
 
 
+
+
+  
 order by tbl_employee.department nulls first, employee_number nulls first, tbl_attendance.attendance_month nulls first;
 
